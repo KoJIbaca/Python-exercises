@@ -1,0 +1,21 @@
+import turtle
+t=turtle.Turtle()
+while True:
+    n=input('Введите нечетное количество вершин звезды:\n')
+    try:
+        n=int(n)
+        while n%2==0:
+            n=int(input('Нельзя вводить четное количество вершин звезды:\n'))
+    except ValueError:
+        print('Нельзя вводить выражения или буквы')
+    else:
+        print('Отлично. Запускаем "черепашку"')
+        break
+        
+t.screen.setup(1000,1000)
+for i in range(n):
+    t.fd(300)
+    angle=n//2*360/n
+    t.left(angle)
+t.screen.mainloop()
+t.screen.exitonclick()
