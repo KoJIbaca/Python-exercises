@@ -1,7 +1,6 @@
 # Способ перебора
 N=int(input('Введите число больше 2: '))
 M=[i for i in range (2, N+1)]
-print(M)
 
 for i in range (len(M)):
     count=0
