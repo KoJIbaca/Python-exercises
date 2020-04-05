@@ -15,8 +15,8 @@ for i in range (len(M)):
 n=int(input('Введите число больше 2: '))
 M=[i for i in range (2, n+1)]
 
-for number in M:
-    if number!=0:
-        for i in range (2 * number, n+1, number):
+for num in M:
+    if num!=0:
+        for i in range (2 * num, n+1, num):
             M[i-2] = 0    
 print(*list(filter(lambda x: x != 0, M)))
