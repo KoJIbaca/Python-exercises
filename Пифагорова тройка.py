@@ -1,3 +1,4 @@
+#Блок проверки на "дурака"
 while True:
     n=input('Введите до какого числа искать:\n')
     try:
@@ -6,6 +7,8 @@ while True:
         print('Нельзя вводить выражения или буквы\n')
     else:
         break
+        
+#Поиск чисел        
 for c in range (1,n+1, 1):
     for a in range (1,c):
         for b in range (1,a):
