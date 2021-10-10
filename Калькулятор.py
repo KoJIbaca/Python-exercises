@@ -15,7 +15,7 @@ def ai_calculate(term1, operation, term2):
     else:
         print(pow(term1, term2))
 
-
+# Функция для ввода чисел
 def ask_key(key):
     while True:
         try:
@@ -48,7 +48,7 @@ def ask_op():
             break
     return ops
 
-
+# Тело калькулятора
 if __name__ == '__main__':
     stop_ops = ['/', '//', '%']
 
